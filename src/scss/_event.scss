@@ -1,23 +1,8 @@
 @use 'variables';
 
 .event {
-  padding: 2rem;
-
-  &--frontend {
-    background: linear-gradient(variables.$blue, variables.$dark-blue);
-  }
-
-  &--ui-ux {
-    background: linear-gradient(variables.$dark-blue, variables.$pink);
-  }
-
-  &--data-science {
-    background: linear-gradient(variables.$pink, variables.$yellow);
-  }
-
-  &--backend {
-    background: linear-gradient(variables.$yellow, variables.$pink);
-  }
+  display: flex;
+  padding: 6rem 1rem;
 
   &--image-left {
     .container {
@@ -27,28 +12,40 @@
 
   .container {
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
   }
-
+  
   &__image {
-    max-width: 360px;
+    width: 100%;
+    max-width: 26.5rem;
+    object-fit: cover;
+    
+    @media (min-width: 64rem) {
+      max-width: 30rem;
+    }
   }
 
   &__details {
     &__title {
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: bold;
-      margin-bottom: 16px;
+      margin-bottom: 1rem;
     }
 
     &__description {
-      line-height: 22px;
+      line-height: 1.3rem;
     }
   }
 
-  @media (max-width: 640px) {
+  @media (min-width: 40rem) {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+
     .container {
-      display: block;
+      flex-direction: row;
     }
 
     &__image {
@@ -57,7 +54,7 @@
 
     &__details {
       margin-right: 0;
-      margin-bottom: 16px;
+      margin-bottom: 1rem;
     }
   }
 }

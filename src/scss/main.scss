@@ -1,6 +1,5 @@
 @use 'hero';
 @use 'components/header';
-@use 'components/buttons';
 @use 'event';
 @use 'variables';
 
@@ -18,15 +17,16 @@
   max-width: 60rem;
   margin: 0 auto;
 
-  @media (min-width: 640px) {
+  @media (min-width: 40rem) {
     max-width: 100%;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 64rem) {
     max-width: 90%;
   }
 }
 
 main {
   overflow: hidden;
+  background: linear-gradient(variables.$blue, variables.$dark-blue, variables.$yellow, variables.$pink);
 }

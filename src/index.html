@@ -21,12 +21,18 @@
 <body>
   <header id="main-header" class="main-header">
     <div class="main-header__container">
-      <img class="main-header__container__logo" src="./img/ebac_logo.svg" alt="EBAC">
+      <img class="main-header__container__logo" src="./imgs/ebac_logo.svg" alt="EBAC">
       <nav class="main-header__container__nav">
         <ul class="main-header__container__nav__items">
-          <li class="main-header__container__nav__items__item">Item</li>
-          <li class="main-header__container__nav__items__item">Item</li>
-          <li class="main-header__container__nav__items__item">Item</li>
+          <li class="main-header__container__nav__items__item">
+            <a href="#theme">Tema</a>
+          </li>
+          <li class="main-header__container__nav__items__item">
+            <a href="#food">Cardápio</a>
+          </li>
+          <li class="main-header__container__nav__items__item">
+            <a href="#place">Local</a>
+          </li>
         </ul>
       </nav>
       <button id="mobile-menu-btn" class="main-header__container__menu-btn">
@@ -40,9 +46,9 @@
   <aside id="mobile-menu" class="mobile-menu">
     <nav class="mobile-menu__nav">
       <ul class="mobile-menu__nav__items">
-        <li class="mobile-menu__nav__items__item"><a href="">Item</a></li>
-        <li class="mobile-menu__nav__items__item"><a href="">Item</a></li>
-        <li class="mobile-menu__nav__items__item"><a href="">Item</a></li>
+        <li class="mobile-menu__nav__items__item"><a class="mobile-menu__nav__items__item--link" href="#theme">Tema</a></li>
+        <li class="mobile-menu__nav__items__item"><a class="mobile-menu__nav__items__item--link" href="#food">Cardápio</a></li>
+        <li class="mobile-menu__nav__items__item"><a class="mobile-menu__nav__items__item--link" href="#place">Local</a></li>
       </ul>
     </nav>
   </aside>
@@ -51,15 +57,6 @@
 
   <section class="hero">
     <div class="container">
-
-      <div class="infos-bar">
-        <b>Localização</b>
-        Allianz Parque - Barra Funda - São Paulo
-        <b>Preço</b>
-        A partir de R$ 120,00
-        <b>Quando</b>
-        12/12/2022 às 19hrs
-      </div>
       <p class="hero__text">
         O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
       </p>
@@ -68,61 +65,53 @@
 
 
   <main>
-    <section id="" class="event event--frontend" >
+    <section id="theme" class="event event--theme">
       <div class="container" data-aos="fade-left">
         <div class="event__details">
-          <h2 class="event__details__title">Front-end</h2>
+          <h2 class="event__details__title">Tema da Festa</h2>
           <p class="event__details__description">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid maiores vel alias obcaecati quidem eaque
             consectetur non distinctio, molestiae labore reprehenderit? Amet culpa facere iure autem atque unde quos
             sequi.
           </p>
         </div>
-        <img class="event__image" src="./img/frontend.png" alt="Front-end">
+        <img class="event__image"
+          src="./imgs/pexels-color-party.jpg"
+          alt="Festa com fumaça e cores diversas">
       </div>
     </section>
 
-    <section id="" class="event event--ui-ux event--image-left" >
-      <div class="container">
+    <section id="food" class="event event--food event--image-left">
+      <div class="container" data-aos="fade-right">
+        <img class="event__image"
+          src="./imgs/pexels-photo-food-table.jpg"
+          alt="Mesa cheia de comida de festa">
         <div class="event__details">
-          <h2 class="event__details__title">UI/UX</h2>
+          <h2 class="event__details__title">Cardápio</h2>
           <p class="event__details__description">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid maiores vel alias obcaecati quidem eaque
             consectetur non distinctio, molestiae labore reprehenderit? Amet culpa facere iure autem atque unde quos
             sequi.
           </p>
         </div>
-        <img class="event__image" src="./img/ui-ux.png" alt="UI/UX">
       </div>
     </section>
-    <section class="event event--data-science">
-      <div class="container">
+    <section id="place" class="event event--place event--image-left">
+      <div class="container" data-aos="fade=down">
         <div class="event__details">
-          <h2 class="event__details__title">Data Science</h2>
+          <h2 class="event__details__title">Local</h2>
           <p class="event__details__description">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid maiores vel alias obcaecati quidem eaque
             consectetur non distinctio, molestiae labore reprehenderit? Amet culpa facere iure autem atque unde quos
             sequi.
           </p>
         </div>
-        <img class="event__image" src="./img/data.png" alt="Data Science">
-      </div>
-    </section>
-    <section id="" class="event event--backend event--image-left">
-      <div class="container">
-        <div class="event__details">
-          <h2 class="event__details__title">Back-end</h2>
-          <p class="event__details__description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid maiores vel alias obcaecati quidem eaque
-            consectetur non distinctio, molestiae labore reprehenderit? Amet culpa facere iure autem atque unde quos
-            sequi.
-          </p>
-        </div>
-        <img class="event__image" src="./img/backend.png" alt="Back-end">
+        <img class="event__image"
+          src="./imgs/pexels-photo-farm.jpg"
+          alt="Vasto campo verde com fazendo a esquerda e o por do sol a direita">
       </div>
     </section>
   </main>
-
 </body>
 
 </html>
