@@ -1,0 +1,32 @@
+@use 'hero';
+@use 'components/header';
+@use 'components/buttons';
+@use 'event';
+@use 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  color: variables.$white;
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+
+  @media (min-width: 640px) {
+    max-width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 90%;
+  }
+}
+
+main {
+  overflow: hidden;
+}
